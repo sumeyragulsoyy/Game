@@ -27,18 +27,19 @@ public class MonopolyGame {
                 String nameOfPlayer = names.nextLine();
                 players[i] = new Player(nameOfPlayer, board, dice, new Piece(board.getStartSquare(),i));
             }
+            System.out.println("\nGame Starting...\n\n");
             playGame(players);
         }
 
     public void playGame(Player[] players) {
 
         for (int i = 0; i < RoundsNumber; i++) {
-            System.out.println("---Round "+i+"---");
+            System.out.println("----Round "+i+"----\n");
 
             for (Player player : players) {
 
-                System.out.println(player.getName() +" is taking a turn... ");
-                System.out.println(player.getPieceName()+" is at "+player.getLocation().getIndex());
+                System.out.println("- "+player.getName() +" is taking a turn: ");
+                System.out.println(player.getPieceName()+" is at "+player.getLocation().getIndex()+"\n");
                 System.out.println("Rolling dice...");
 
                 int rollTotal=0;
@@ -54,7 +55,7 @@ public class MonopolyGame {
                 Square newLocation= board.getSquare(player.getLocation(),rollTotal);
                 player.getPiece().setLocation(newLocation);
 
-                System.out.println(player.getName() + " 's new location is "+"Square"+ player.getLocation().getIndex());
+                System.out.println("\n" + player.getName() + "'s new location is " + player.getLocation().getIndex()+"\n\n\n");
             }
         }
     }

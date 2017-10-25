@@ -1,4 +1,5 @@
 public class Die {
+
     public static final int MAX = 6;
     private int faceValue;
 
