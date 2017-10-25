@@ -4,15 +4,16 @@ public class Player {
     private Board board;
     private Die[] dice;
 
-    public Player(String name, Board board, Die[] dice) {
+    public Player(String name, Board board, Die[] dice ) {
         this.setName(name);
         this.board=board;
         this.dice=dice;
-        this.piece= new Piece(board.getStartSquare()); //Player a piece objesi atıyor ----ama ismi yok !!
+        this.piece= new Piece(board.getStartSquare(),name); //Player a piece objesi atıyor ----ama ismi yok !!
     }
 
     public void takeTurn() {
-        System.out.println(name +" taking a turn... ");
+        System.out.println(name +" is taking a turn... ");
+        System.out.println(Piece.name+" is at "+piece.getLocation());
 
         int rollTotal=0;
         for(int i=0;i<dice.length;i++){
@@ -22,7 +23,7 @@ public class Player {
         Square newLocation= board.getSquare(this.piece.getLocation(),rollTotal);
         piece.setLocation(newLocation);
 
-        System.out.println("Square"+ getLocation().getIndex());
+        System.out.println(name + " 's new location is "+"Square"+ getLocation().getIndex());
     }
 
     public Square getLocation() {
@@ -35,6 +36,7 @@ public class Player {
     }
 
     public void setName(String name) {
+
         this.name=name;
     }
 }

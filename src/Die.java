@@ -3,6 +3,7 @@ public class Die {
     private int faceValue;
 
     public Die() {
+
         roll();
     }
 
