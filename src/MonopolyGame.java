@@ -39,7 +39,25 @@ public class MonopolyGame {
             System.out.println("---Round "+i+"---");
 
             for (Player player : players) {
-                player.takeTurn();
+
+                System.out.println(player.getName() +" is taking a turn... ");
+                System.out.println(player.getPieceName()+" is at "+player.getLocation());
+                System.out.println("Rolling dice...");
+
+                int rollTotal=0;
+
+                for(int j=0;j<dice.length;j++){
+
+                    dice[j].roll();
+                    rollTotal+=dice[j].getFaceValue();
+                    int diceNumber = j + 1;
+                    System.out.println("Dice " + diceNumber + ": " + dice[j].getFaceValue());
+                }
+
+                Square newLocation= board.getSquare(player.getLocation(),rollTotal);
+                player.getPiece().setLocation(newLocation);
+
+                System.out.println(player.getName() + " 's new location is "+"Square"+ player.getLocation().getIndex());
             }
         }
     }
