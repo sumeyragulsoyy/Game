@@ -8,7 +8,7 @@ public class Piece {
     public Piece(Square location,int pieceNumber) {
 
         this.location=location;
-        this.name=pieces[pieceNumber];
+        this.name=pieces[pieceNumber];a
     }
 
     public Square getLocation() {
