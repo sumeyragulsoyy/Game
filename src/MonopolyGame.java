@@ -25,9 +25,9 @@ public class MonopolyGame {
             }
              System.out.println("Enter names of Players: ");
             for (int i = 0; i < numOfPlayer; i++) {
-                Scanner names= new Scanner(System.in);
-                String NameofPlayer=names.nextLine();
-                Player player = new Player(NameofPlayer, board, dice);
+                Scanner names = new Scanner(System.in);
+                String NameofPlayer = names.nextLine();
+                Player player = new Player(NameofPlayer, board, dice, new Piece(board.getStartSquare(),i));
                 players.add(player);
             }
         }

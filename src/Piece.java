@@ -1,12 +1,14 @@
 public class Piece {
     public Square location;
-   // String [] pieces={"DOG","RaceCAR","Shoe","Hat","Boot","BattleShip","Iron","Horse"};
-   public  static String  name;
 
-    public Piece(Square location,String name) {
+    String [] pieces={"Dog","Racecar","Shoe","Hat","Boot","BattleShip","Iron","Horse"};
+
+    public  static String name;
+
+    public Piece(Square location,int pieceNumber) {
 
         this.location=location;
-        this.name=name;
+        this.name=pieces[pieceNumber];
     }
 
     public Square getLocation() {
@@ -15,6 +17,12 @@ public class Piece {
     }
 
     public void setLocation(Square location) {
+
         this.location=location;
+    }
+
+    public String getName() {
+
+        return name;
     }
 }
