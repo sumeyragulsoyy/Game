@@ -27,6 +27,6 @@ public class Player {
 
     public String getPieceName() {
 
-        return piece.name;
+        return piece.getName();
     }
 }

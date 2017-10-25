@@ -3,80 +3,19 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="202.0">Die</node>
-    <node x="207.9183366402117" y="713.0">MonopolyGame</node>
-    <node x="225.37739748677257" y="414.0">Player</node>
-    <node x="405.0" y="191.0">Board</node>
-    <node x="184.0" y="213.0">Piece</node>
-    <node x="332.7999338624339" y="0.0">Square</node>
-    <node x="675.0" y="0.0">Main</node>
+    <node x="0.0" y="550.0">Die</node>
+    <node x="307.0" y="314.0">MonopolyGame</node>
+    <node x="0.0" y="0.0">Player</node>
+    <node x="574.0" y="314.0">Square</node>
+    <node x="0.0" y="314.0">Board</node>
+    <node x="332.0" y="0.0">Piece</node>
+    <node x="230.0" y="550.0">Main</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="Player" target="Die">
-      <point x="-90.42857142857144" y="-114.5" />
-      <point x="240.44882605820112" y="394.0" />
-      <point x="114.80000000000001" y="394.0" />
-      <point x="32.8" y="70.5" />
-    </edge>
-    <edge source="MonopolyGame" target="Board">
-      <point x="66.66666666666669" y="-136.5" />
-      <point x="374.5850033068784" y="683.0" />
-      <point x="562.0194444444444" y="683.0" />
-      <point x="562.0194444444444" y="394.0" />
-      <point x="545.625" y="394.0" />
-      <point x="28.125" y="81.5" />
-    </edge>
-    <edge source="Player" target="Square">
-      <point x="30.14285714285711" y="-114.5" />
-      <point x="361.0202546296297" y="374.0" />
-      <point x="394.5" y="374.0" />
-      <point x="394.5" y="171.0" />
-      <point x="402.3832671957672" y="171.0" />
-      <point x="-13.916666666666686" y="70.5" />
-    </edge>
-    <edge source="Piece" target="Square">
-      <point x="-50.0" y="-59.5" />
-      <point x="234.0" y="161.0" />
-      <point x="346.71660052910056" y="161.0" />
-      <point x="-69.58333333333331" y="70.5" />
-    </edge>
-    <edge source="MonopolyGame" target="Player">
-      <point x="0.0" y="-136.5" />
-      <point x="307.9183366402117" y="693.0" />
-      <point x="304.50239748677257" y="693.0" />
-      <point x="-26.375" y="114.5" />
-    </edge>
-    <edge source="Player" target="Board">
-      <point x="90.42857142857144" y="-114.5" />
-      <point x="421.305968915344" y="394.0" />
-      <point x="489.375" y="394.0" />
-      <point x="-28.125" y="81.5" />
-    </edge>
-    <edge source="Player" target="Piece">
-      <point x="-5.6843418860808015E-14" y="-114.5" />
-      <point x="330.8773974867725" y="394.0" />
-      <point x="334.0" y="394.0" />
-      <point x="50.0" y="59.5" />
-    </edge>
-    <edge source="Board" target="Square">
-      <point x="0.0" y="-81.5" />
-      <point x="517.5" y="171.0" />
-      <point x="458.0499338624339" y="171.0" />
-      <point x="41.75" y="70.5" />
-    </edge>
-    <edge source="MonopolyGame" target="Die">
-      <point x="-66.66666666666669" y="-136.5" />
-      <point x="241.251669973545" y="683.0" />
-      <point x="52.698826058201064" y="683.0" />
-      <point x="52.698826058201064" y="394.0" />
-      <point x="49.19999999999999" y="394.0" />
-      <point x="-32.80000000000001" y="70.5" />
-    </edge>
-  </edges>
-  <settings layout="Hıerarchıc Group" zoom="1.0" x="163.0" y="-1074.0" />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="558.5" y="210.0" />
   <SelectedNodes>
-    <node>Main</node>
+    <node>Player</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>

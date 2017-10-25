@@ -38,7 +38,7 @@ public class MonopolyGame {
 
             for (Player player : players) {
 
-                System.out.println("- "+player.getName() +" is taking a turn: ");
+                System.out.println("- "+player.getName() +" is taking a turn: \n");
                 System.out.println(player.getPieceName()+" is at "+player.getLocation().getIndex()+"\n");
                 System.out.println("Rolling dice...");
 

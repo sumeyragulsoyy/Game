@@ -1,7 +1,7 @@
 public class Piece {
 
-    public Square location;
-    public String name;
+    private Square location;
+    private String name;
     private String [] pieceNames={"Dog","Racecar","Shoe","Hat","Boot","BattleShip","Iron","Horse"};
 
     public Piece(Square location,int nameNumber) {
