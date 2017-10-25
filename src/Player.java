@@ -22,7 +22,7 @@ public class Player {
         Square newLocation= board.getSquare(this.piece.getLocation(),rollTotal);
         piece.setLocation(newLocation);
 
-        System.out.println(" new location is "+ getLocation().getIndex());
+        System.out.println("Square"+ getLocation().getIndex());
     }
 
     public Square getLocation() {

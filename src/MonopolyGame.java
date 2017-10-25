@@ -12,6 +12,7 @@ public class MonopolyGame {
       //  System.out.println("Enter a number: ");
         int numOfPlayer = number.nextInt(); // num=player sayısı
         // oyun alanı kurulumu
+
         private List<Player> players = new ArrayList<Player>(numOfPlayer); // playerları oluşturduk
         private Board board = new Board();                                  // board oluştu
         private Die[] dice = new Die[DiceNumber];                           // zar objeleri yaratıldı
@@ -44,4 +45,3 @@ public class MonopolyGame {
     }
 
 }
-//}
