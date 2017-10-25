@@ -15,7 +15,6 @@ public class MonopolyGame {
     public MonopolyGame(int numOfPlayer) {
 
         Player[] players = new Player[numOfPlayer];
-        Piece[] pieces = new Piece[numOfPlayer];
 
             for (int i = 0; i < DiceNumber; i++) {
                 dice[i] = new Die();
@@ -26,9 +25,7 @@ public class MonopolyGame {
             for (int i = 0; i < numOfPlayer; i++) {
                 Scanner names = new Scanner(System.in);
                 String nameOfPlayer = names.nextLine();
-                pieces[i] = new Piece(board.getStartSquare(),i);
-                players[i] = new Player(nameOfPlayer, board, dice, pieces[i]);
-                System.out.println(players[i].getPieceName());
+                players[i] = new Player(nameOfPlayer, board, dice, new Piece(board.getStartSquare(),i));
             }
             playGame(players);
         }
@@ -41,7 +38,7 @@ public class MonopolyGame {
             for (Player player : players) {
 
                 System.out.println(player.getName() +" is taking a turn... ");
-                System.out.println(player.getPieceName()+" is at "+player.getLocation());
+                System.out.println(player.getPieceName()+" is at "+player.getLocation().getIndex());
                 System.out.println("Rolling dice...");
 
                 int rollTotal=0;
