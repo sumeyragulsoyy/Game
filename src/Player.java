@@ -13,12 +13,15 @@ public class Player {
 
     public void takeTurn() {
         System.out.println(name +" is taking a turn... ");
-        System.out.println(piece.getName()+" is at "+piece.getLocation());
+        System.out.println(getPieceName()+" is at "+piece.getLocation());
+        System.out.println("Rolling dice...");
 
         int rollTotal=0;
         for(int i=0;i<dice.length;i++){
             dice[i].roll();
             rollTotal+=dice[i].getFaceValue();
+            int diceNumber = i + 1;
+            System.out.println("Dice " + diceNumber + ": " + dice[i].getFaceValue());
         }
         Square newLocation= board.getSquare(this.piece.getLocation(),rollTotal);
         piece.setLocation(newLocation);
