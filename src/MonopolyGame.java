@@ -55,7 +55,7 @@ public class MonopolyGame {
                 Square newLocation= board.getSquare(player.getLocation(),rollTotal);
                 player.getPiece().setLocation(newLocation);
 
-                System.out.println("\n" + player.getName() + "'s new location is " + player.getLocation().getIndex()+"\n\n\n");
+                System.out.println("\n" + player.getPieceName() + "'s new location is Square" + player.getLocation().getIndex()+"\n\n\n");
             }
         }
     }
