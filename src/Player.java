@@ -4,6 +4,7 @@ public class Player {
     private Piece piece;
     private Board board;
     private Die[] dice;
+    private int money;
 
     public Player(String name, Board board, Die[] dice,Piece piece) {
         this.name = name;
@@ -12,21 +13,18 @@ public class Player {
         this.piece = piece; //Player a piece objesi atıyor ----ama ismi yok !!
     }
 
-    public Square getLocation() {
+    public Square getLocation() { return this.piece.getLocation(); }
 
-        return this.piece.getLocation();
-    }
+    public Piece getPiece() { return piece; }
 
-    public Piece getPiece() {
-        return piece;
-    }
+    public String getName() { return name; }
 
-    public String getName() {
-        return name;
-    }
+    public String getPieceName() { return piece.getName(); }
 
-    public String getPieceName() {
+    public int getMoney(){ return money; }
 
-        return piece.getName();
+    public void setMoney(int valueToChange) {
+
+        money += valueToChange;
     }
 }
