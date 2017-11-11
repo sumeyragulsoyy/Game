@@ -3,18 +3,16 @@ import java.util.Scanner;
 
 public class MonopolyGame {
 
-        private static final int RoundsNumber = 5;
-        private static final int DiceNumber = 2;
+        private static final int RoundsNumber = 5;  //number of rounds
+        private static final int DiceNumber = 2;    //number of dices
 
-        // oyun alanı kurulumu
-
-        private Board board = new Board();                                  // board oluştu
-        private Die[] dice = new Die[DiceNumber];   // zar objeleri yaratıldı
+        private Board board = new Board();  //create board object
+        private Die[] dice = new Die[DiceNumber];   // create dice objects
 
 
     public MonopolyGame(int numOfPlayer) {
 
-        Player[] players = new Player[numOfPlayer];
+        Player[] players = new Player[numOfPlayer]; //create player array
 
             for (int i = 0; i < DiceNumber; i++) {
                 dice[i] = new Die();
@@ -44,10 +42,10 @@ public class MonopolyGame {
 
                 int rollTotal=0;
 
-                for(int j=0;j<dice.length;j++){
+                for(int j=0; j<dice.length; j++){
 
                     dice[j].roll();
-                    rollTotal+=dice[j].getFaceValue();
+                    rollTotal += dice[j].getFaceValue();
                     int diceNumber = j + 1;
                     System.out.println("Dice " + diceNumber + ": " + dice[j].getFaceValue());
                 }

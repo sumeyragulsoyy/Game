@@ -10,7 +10,7 @@ public class Board {
         buildSquares();
     }
 
-    public Square getSquare(Square start, int distance) { // public di private yaptım
+    public Square getSquare(Square start, int distance) {
         int endIndex= (start.getIndex()+distance)%Board.SIZE;
         return squares.get(endIndex);
     }
@@ -20,7 +20,8 @@ public class Board {
         return squares.get(0);
     }
 
-    private void buildSquares() {
+    public void buildSquares() {
+
         for(int i=0;i<SIZE;i++){
             Square square= new Square( "Square "+i,i);
             squares.add(square);
